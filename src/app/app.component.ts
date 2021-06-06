@@ -3,7 +3,13 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
-  templateUrl: 'app.component.html'
+  templateUrl: 'app.component.html',
+  styles:[`
+    .route-active {
+      color: red;
+      font-weight: bold;
+    }
+  `]
 })
 export class AppComponent {
 
