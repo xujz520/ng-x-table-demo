@@ -1,13 +1,29 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+
+import { NgEasyMockModule } from 'ng-easy-mock';
+import * as MOCKDATA from '../../_mock';
 
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
+import { CoreModule } from './core/core.module'; 
+import { SharedModule } from './shared/shared.module';
+import { RoutesModule } from './routes/routes.module';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent ],
-  bootstrap:    [ AppComponent ]
+  declarations: [
+    AppComponent,
+  ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    CoreModule,
+    NgEasyMockModule.forRoot({ data: MOCKDATA }),
+    RoutesModule,
+    SharedModule,
+  ],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,11 @@
+<p>
+  test1 works!
+</p>
+
+<hr>
+
+<x-table #baseTable [autoHeight]="16" [columns]="columns" [url]="'/xtable/student/list'" [params]="searchParams">
+  <ng-template x-template="btn" let-rowData>
+    <button type="button">操作项</button>
+  </ng-template>
+</x-table>
