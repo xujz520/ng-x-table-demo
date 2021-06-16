@@ -11,7 +11,7 @@
     "@angular/platform-browser": "11.2.14",
     "@angular/platform-browser-dynamic": "11.2.14",
     "@angular/router": "11.2.14",
-    "@ng-dms/x-table": "11.0.2",
+    "@ng-dms/x-table": "11.0.7",
     "mockjs": "^1.1.0",
     "ng-easy-mock": "11.0.0",
     "rxjs": "6.6.7",
